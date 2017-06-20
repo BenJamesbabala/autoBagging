@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: autoBagging\nType: Package\nTitle: autoBagging: Learning to Rank Bagging Workflows with Metalearning\nVersion: 0.1.0\nAuthors@R: c(person(\"Fábio\", \"Pinto\", email = \"fabiohscpinto@gmail.com\", role = c(\"aut\")),\n\t\t\t person(\"Vitor\", \"Cerqueira\", role = c(\"cre\")),\n\t\t\t person(\"Carlos\", \"Soares\", role = \"ctb\"),\n\t\t\t person(\"João\", \"Mendes-Moreira\", role = \"ctb\"))\nMaintainer: Vítor Cerqueira <cerqueira.vitormanuel@gmail.com>\nDescription: Automatic asdas. asdaskqwed sa sadf. asdsa ooqw. \nImports:\n    cluster,\n    methods,\n    xgboost,\n    e1071,\n    rpart,\n    abind,\n    caret,\n    MASS,\n    entropy,\n    lsr,\n    CORElearn,\n    infotheo,\n    minerva,\n    party\nLicense: GPL (>=2)\nEncoding: UTF-8\nLazyData: true\nRoxygenNote: 6.0.1\nSuggests: testthat\n",
+    "created" : 1497964690640.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2000736738",
+    "id" : "108997D7",
+    "lastKnownWriteTime" : 1497967768,
+    "last_content_update" : 1497967768,
+    "path" : "~/Dropbox/AutoFuckingBagging/package/autobagging/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+        "source_window_id" : ""
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

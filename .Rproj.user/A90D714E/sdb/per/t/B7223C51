@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' autobagging\n#'\n#' Learning to Rank Bagging Workflows with Metalearning\n#'\n#' @param form formula. Currently supporting only categorical target\n#' variables (classification tasks)\n#' @param data training dataset with a categorical target variable\n#'\n#' @references Pinto, F. ...\n#'\n#' @seealso \\code{\\link{bagging}} for the bagging pipeline with a specific\n#' workflow; \\code{\\link{baggedtrees}} for the bagging implementation;\n#' \\code{\\link{abmodel-class}} for the returning class object\n#'\n#' @return an \\code{abmodel} class object\n#'\n#' @import xgboost\n#'\n#' @export\nautobagging <- function(form, data) {\n  if (!class(data[, get_target(form)]) %in% c(\"factor\", \"character\")) {\n    stop(\"autobagging currently only supports classification tasks.\n       Check your target variable in the formula provided.\", call. = FALSE)\n  }\n\n  if (nrow(data) > 100000L) # QUAL O THRESHOLD?\n    warning(\"Very large datasets are out of the scope\n            of the experimental setup\n            used to validate autobagging.\n            Check references for further information.\",\n            call. = FALSE)\n\n  meta.example <- meta.dataframe(data, metafeatures_names)\n\n  for (i in colnames(Xtest)[1:143]) {\n    max_value <- MaxMinMetafeatures[MaxMinMetafeatures[, 1] == i, 2]\n    min_value <- MaxMinMetafeatures[MaxMinMetafeatures[, 1] == i, 3]\n    meta.example[[i]] <-  ifelse(is.finite(normalize01(meta.example[[i]],\n                                                       max_value,\n                                                       min_value)),\n                                 normalize01(meta.example[[i]],\n                                             max_value,\n                                             min_value), -1)\n\n    Xtest[,i] <- meta.example[[i]]\n  }\n\n  X <- xgboost::xgb.DMatrix(data = data.matrix(Xtest),  group = c(63), missing = -1)\n\n  data(\"metamodel\")\n  meta.model <- xgboost::xgb.load(metamodel)\n\n  meta.pred <- cbind(as.data.frame(Xtest), predict(meta.model, X))\n  colnames(meta.pred)[ncol(meta.pred)] <- c(\"meta.pred\")\n\n  cat(\"Your recommended workflow is...\\n\\n\")\n  RecWF <- cleanRecWF(meta.pred[which.max(meta.pred$meta.pred),\n                                (ncol(meta.pred)-13):ncol(meta.pred)])\n\n  catWF(RecWF)\n  # acrescentar opcao para treinar o modelo ou simplesmente retornar o melhor set???\n  cat('################################\\n\\n')\n  cat('Training recommended workflow...\\n\\n')\n\n  bagging(form = form,\n          data = data,\n          ntrees = RecWF$nTrees,\n          pruning = RecWF$pruningMethods,\n          dselection = RecWF$dynamicMethods,\n          pruning_cp = RecWF$pruningCutPoint)\n}\n",
+    "created" : 1497961293004.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "870780289",
+    "id" : "B7223C51",
+    "lastKnownWriteTime" : 1497964799,
+    "last_content_update" : 1497964799760,
+    "path" : "~/Dropbox/AutoFuckingBagging/package/autobagging/R/autobagging-pipeline.r",
+    "project_path" : "R/autobagging-pipeline.r",
+    "properties" : {
+        "source_window_id" : ""
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,30 @@
+Package: autoBagging
+Type: Package
+Title: autoBagging: Learning to Rank Bagging Workflows with Metalearning
+Version: 0.1.0
+Authors@R: c(person("Fábio", "Pinto", email = "fabiohscpinto@gmail.com", role = c("aut")),
+			 person("Vitor", "Cerqueira", role = c("cre")),
+			 person("Carlos", "Soares", role = "ctb"),
+			 person("João", "Mendes-Moreira", role = "ctb"))
+Maintainer: Vítor Cerqueira <cerqueira.vitormanuel@gmail.com>
+Description: Automatic asdas. asdaskqwed sa sadf. asdsa ooqw. 
+Imports:
+    cluster,
+    methods,
+    xgboost,
+    e1071,
+    rpart,
+    abind,
+    caret,
+    MASS,
+    entropy,
+    lsr,
+    CORElearn,
+    infotheo,
+    minerva,
+    party
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: testthat
