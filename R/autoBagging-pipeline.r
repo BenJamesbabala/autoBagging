@@ -29,7 +29,8 @@ autoBagging <- function(form, data) {
             used to validate autoBagging.
             Check references for further information.",
             call. = FALSE)
-
+  cat("Sit tight, relax and enjoy your coffee. autoBagging is working for you!\n\n")
+  cat("https://www.youtube.com/watch?v=hMr3KtYUCcI\n")
   meta.example <- meta.dataframe(data, metafeatures_names)
 
   for (i in colnames(Xtest)[1:143]) {
