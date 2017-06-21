@@ -1,4 +1,4 @@
-#' autobagging
+#' autoBagging
 #'
 #' Learning to Rank Bagging Workflows with Metalearning
 #'
@@ -19,14 +19,14 @@
 #' @export
 autoBagging <- function(form, data) {
   if (!class(data[, get_target(form)]) %in% c("factor", "character")) {
-    stop("autobagging currently only supports classification tasks.
+    stop("autoBagging currently only supports classification tasks.
        Check your target variable in the formula provided.", call. = FALSE)
   }
 
   if (nrow(data) > 100000L) # QUAL O THRESHOLD?
     warning("Very large datasets are out of the scope
             of the experimental setup
-            used to validate autobagging.
+            used to validate autoBagging.
             Check references for further information.",
             call. = FALSE)
 

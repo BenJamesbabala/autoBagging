@@ -2,12 +2,17 @@ Package: autoBagging
 Type: Package
 Title: autoBagging: Learning to Rank Bagging Workflows with Metalearning
 Version: 0.1.0
-Authors@R: c(person("Fábio", "Pinto", email = "fabiohscpinto@gmail.com", role = c("aut")),
-			 person("Vitor", "Cerqueira", role = c("cre")),
-			 person("Carlos", "Soares", role = "ctb"),
-			 person("João", "Mendes-Moreira", role = "ctb"))
-Maintainer: Vítor Cerqueira <cerqueira.vitormanuel@gmail.com>
+Authors@R:  c(person("Fabio", "Pinto", role = c("aut")),
+              person("Vitor", "Cerqueira", email = "cerqueira.vitormanuel@gmail.com", role = "cre"),
+              person("Carlos", "Soares", role = "ctb"),
+              person("Joao", "Mendes-Moreira", role = "ctb"))
+Author: Fabio Pinto [aut],
+        Vitor Cerqueira [cre],
+        Carlos Soares [ctb]
+        Joao Mendes-Moreira [ctb]
+Maintainer: Vitor Cerqueira <cerqueira.vitormanuel@gmail.com>
 Description: Automatic asdas. asdaskqwed sa sadf. asdsa ooqw. 
+Depends: R (>= 2.10)
 Imports:
     cluster,
     methods,

@@ -1,4 +1,4 @@
 library(testthat)
-library(autobagging)
+library(autoBagging)
 
-test_check("autobagging")
+test_check("autoBagging")
