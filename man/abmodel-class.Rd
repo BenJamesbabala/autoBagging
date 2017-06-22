@@ -24,6 +24,6 @@ This value is predicted by the metalearning model.}
 }}
 
 \seealso{
-\code{\link{autobagging}} function for the method os predicting the
+\code{\link{autoBagging}} function for the method os predicting the
 best workflow.
 }

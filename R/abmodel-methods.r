@@ -13,7 +13,7 @@ setMethod("show",
             }
           })
 
-#' Predicting on new data with a \strong{autobagging} model
+#' Predicting on new data with a \strong{autoBagging} model
 #'
 #' This is a \code{predict} method for predicting new data points using a
 #' \code{tseModel} class object - refering to an ensemble for time series
@@ -25,7 +25,7 @@ setMethod("show",
 #' @param newdata New data to predict using \code{autobagging} model object
 #'
 #' @return predictions made by an \code{autobagging} model.
-#' 
+#'
 #' @import party
 #'
 #' @export
@@ -37,20 +37,20 @@ setMethod("predict",
                 "ola" = {
                   cat("Using OLA method to dynamically
                        predict new instances...\n")
-                  predict.OLA(object@form,
-                              object@base_models,
-                              object@data,
-                              newdata,
-                              5)
+                  OLA(object@form,
+                      object@base_models,
+                      object@data,
+                      newdata,
+                      5)
                   },
                 "knora-e" = {
                   cat("Using KNORA-E method to dynamically
                        predict new instances...\n")
-                  predict.KNORA.E(object@form,
-                                  object@base_models,
-                                  object@data,
-                                  newdata,
-                                  5)
+                  KNORA.E(object@form,
+                          object@base_models,
+                          object@data,
+                          newdata,
+                          5)
                   },
                 "none" = {
                   cat("Using majority voting method to

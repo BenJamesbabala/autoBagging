@@ -19,27 +19,27 @@ avg.abs.attr.correlation <- function(dataset, data.char) {
   mean(abs(ac[!is.na(ac)]))
 }
 
-min.abs.attr.correlation <- function(dataset, data.char) {
+min_abs.attr.correlation <- function(dataset, data.char) {
   ac <- GetMeasure("attr.correlation", data.char)
   min(abs(ac[! is.na(ac)]))
 }
 
-max.abs.attr.correlation <- function(dataset, data.char) {
+max_abs.attr.correlation <- function(dataset, data.char) {
   ac <- GetMeasure("attr.correlation", data.char)
   max(abs(ac[! is.na(ac)]))
 }
 
-sd.abs.attr.correlation <- function(dataset, data.char) {
+sd_abs.attr.correlation <- function(dataset, data.char) {
   ac <- GetMeasure("attr.correlation", data.char)
   sd(abs(ac[! is.na(ac)]))
 }
 
-var.abs.attr.correlation <- function(dataset, data.char) {
+var_abs.attr.correlation <- function(dataset, data.char) {
   ac <- GetMeasure("attr.correlation", data.char)
   var(abs(ac[! is.na(ac)]))
 }
 
-hist.attr.correlation <- function(dataset, data.char) {
+hist_attr.correlation <- function(dataset, data.char) {
   x <- na.omit(range01(na.omit(as.numeric(GetMeasure("attr.correlation", data.char)))))
   aux <- NULL
 
@@ -52,44 +52,44 @@ hist.attr.correlation <- function(dataset, data.char) {
   aux
 }
 
-hist.attr.correlation.bin1 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[1]
+hist_attr.correlation.bin1 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[1]
 }
 
-hist.attr.correlation.bin2 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[2]
+hist_attr.correlation.bin2 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[2]
 }
 
-hist.attr.correlation.bin3 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[3]
+hist_attr.correlation.bin3 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[3]
 }
 
-hist.attr.correlation.bin4 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[4]
+hist_attr.correlation.bin4 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[4]
 }
 
-hist.attr.correlation.bin5 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[5]
+hist_attr.correlation.bin5 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[5]
 }
 
-hist.attr.correlation.bin6 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[6]
+hist_attr.correlation.bin6 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[6]
 }
 
-hist.attr.correlation.bin7 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[7]
+hist_attr.correlation.bin7 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[7]
 }
 
-hist.attr.correlation.bin8 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[8]
+hist_attr.correlation.bin8 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[8]
 }
 
-hist.attr.correlation.bin9 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[9]
+hist_attr.correlation.bin9 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[9]
 }
 
-hist.attr.correlation.bin10 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.correlation", data.char))[10]
+hist_attr.correlation.bin10 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.correlation", data.char))[10]
 }
 
 class.entropy <- function(dataset, data.char) {
@@ -102,23 +102,23 @@ avg.attr.entropy <- function(dataset, data.char) {
   mean(as.numeric(GetMeasure("attr.entropy", data.char)))
 }
 
-max.attr.entropy <- function(dataset, data.char) {
+max_attr.entropy <- function(dataset, data.char) {
   max(as.numeric(GetMeasure("attr.entropy", data.char)))
 }
 
-min.attr.entropy <- function(dataset, data.char) {
+min_attr.entropy <- function(dataset, data.char) {
   min(as.numeric(GetMeasure("attr.entropy", data.char)))
 }
 
-var.attr.entropy <- function(dataset, data.char) {
+var_attr.entropy <- function(dataset, data.char) {
   var(as.numeric(GetMeasure("attr.entropy", data.char)))
 }
 
-sd.attr.entropy <- function(dataset, data.char) {
+sd_attr.entropy <- function(dataset, data.char) {
   sd(as.numeric(GetMeasure("attr.entropy", data.char)))
 }
 
-hist.attr.entropy <- function(dataset, data.char) {
+hist_attr.entropy <- function(dataset, data.char) {
   x <- GetMeasure("attr.entropy", data.char)
   x <- range01(na.omit(as.numeric(x)))
 
@@ -129,44 +129,44 @@ hist.attr.entropy <- function(dataset, data.char) {
   }
 }
 
-hist.attr.entropy.bin1 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[1]
+hist_attr.entropy.bin1 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[1]
 }
 
-hist.attr.entropy.bin2 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[2]
+hist_attr.entropy.bin2 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[2]
 }
 
-hist.attr.entropy.bin3 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[3]
+hist_attr.entropy.bin3 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[3]
 }
 
-hist.attr.entropy.bin4 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[4]
+hist_attr.entropy.bin4 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[4]
 }
 
-hist.attr.entropy.bin5 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[5]
+hist_attr.entropy.bin5 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[5]
 }
 
-hist.attr.entropy.bin6 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[6]
+hist_attr.entropy.bin6 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[6]
 }
 
-hist.attr.entropy.bin7 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[7]
+hist_attr.entropy.bin7 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[7]
 }
 
-hist.attr.entropy.bin8 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[8]
+hist_attr.entropy.bin8 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[8]
 }
 
-hist.attr.entropy.bin9 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[9]
+hist_attr.entropy.bin9 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[9]
 }
 
-hist.attr.entropy.bin10 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.entropy", data.char))[10]
+hist_attr.entropy.bin10 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.entropy", data.char))[10]
 }
 
 
@@ -479,27 +479,27 @@ avg.attr.trio.interinfo <- function(dataset, data.char) {
   mean(ac)
 }
 
-min.attr.trio.interinfo <- function(dataset, data.char) {
+min_attr.trio.interinfo <- function(dataset, data.char) {
   ac <- GetMeasure("attr.trio.interinfo", data.char)
   min(ac)
 }
 
-max.attr.trio.interinfo <- function(dataset, data.char) {
+max_attr.trio.interinfo <- function(dataset, data.char) {
   ac <- GetMeasure("attr.trio.interinfo", data.char)
   max(ac)
 }
 
-var.attr.trio.interinfo <- function(dataset, data.char) {
+var_attr.trio.interinfo <- function(dataset, data.char) {
   ac <- GetMeasure("attr.trio.interinfo", data.char)
   var(ac)
 }
 
-sd.attr.trio.interinfo <- function(dataset, data.char) {
+sd_attr.trio.interinfo <- function(dataset, data.char) {
   ac <- GetMeasure("attr.trio.interinfo", data.char)
   sd(ac)
 }
 
-hist.attr.trio.interinfo <- function(dataset, data.char) {
+hist_attr.trio.interinfo <- function(dataset, data.char) {
   if (length(na.omit(GetMeasure("attr.trio.interinfo", data.char))) == 0) {
     return(NA)
   } else {
@@ -507,44 +507,44 @@ hist.attr.trio.interinfo <- function(dataset, data.char) {
   }
 }
 
-hist.attr.trio.interinfo.bin1 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[1]
+hist_attr.trio.interinfo.bin1 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[1]
 }
 
-hist.attr.trio.interinfo.bin2 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[2]
+hist_attr.trio.interinfo.bin2 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[2]
 }
 
-hist.attr.trio.interinfo.bin3 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[3]
+hist_attr.trio.interinfo.bin3 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[3]
 }
 
-hist.attr.trio.interinfo.bin4 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[4]
+hist_attr.trio.interinfo.bin4 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[4]
 }
 
-hist.attr.trio.interinfo.bin5 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[5]
+hist_attr.trio.interinfo.bin5 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[5]
 }
 
-hist.attr.trio.interinfo.bin6 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[6]
+hist_attr.trio.interinfo.bin6 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[6]
 }
 
-hist.attr.trio.interinfo.bin7 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[7]
+hist_attr.trio.interinfo.bin7 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[7]
 }
 
-hist.attr.trio.interinfo.bin8 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[8]
+hist_attr.trio.interinfo.bin8 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[8]
 }
 
-hist.attr.trio.interinfo.bin9 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[9]
+hist_attr.trio.interinfo.bin9 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[9]
 }
 
-hist.attr.trio.interinfo.bin10 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.trio.interinfo", data.char))[10]
+hist_attr.trio.interinfo.bin10 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.trio.interinfo", data.char))[10]
 }
 
 attr.class.trio.interinfo <- function(dataset, data.char) {
@@ -569,27 +569,27 @@ avg.attr.class.trio.interinfo <- function(dataset, data.char) {
   mean(ac)
 }
 
-min.attr.class.trio.interinfo <- function(dataset, data.char) {
+min_attr.class.trio.interinfo <- function(dataset, data.char) {
   ac <- GetMeasure("attr.class.trio.interinfo", data.char)
   min(ac)
 }
 
-max.attr.class.trio.interinfo <- function(dataset, data.char) {
+max_attr.class.trio.interinfo <- function(dataset, data.char) {
   ac <- GetMeasure("attr.class.trio.interinfo", data.char)
   max(ac)
 }
 
-var.attr.class.trio.interinfo <- function(dataset, data.char) {
+var_attr.class.trio.interinfo <- function(dataset, data.char) {
   ac <- GetMeasure("attr.class.trio.interinfo", data.char)
   var(ac)
 }
 
-sd.attr.class.trio.interinfo <- function(dataset, data.char) {
+sd_attr.class.trio.interinfo <- function(dataset, data.char) {
   ac <- GetMeasure("attr.class.trio.interinfo", data.char)
   sd(ac)
 }
 
-hist.attr.class.trio.interinfo <- function(dataset, data.char) {
+hist_attr.class.trio.interinfo <- function(dataset, data.char) {
   if (length(na.omit(GetMeasure("attr.class.trio.interinfo", data.char))) == 0) {
     return(NA)
   } else {
@@ -597,44 +597,44 @@ hist.attr.class.trio.interinfo <- function(dataset, data.char) {
   }
 }
 
-hist.attr.class.trio.interinfo.bin1 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[1]
+hist_attr.class.trio.interinfo.bin1 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[1]
 }
 
-hist.attr.class.trio.interinfo.bin2 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[2]
+hist_attr.class.trio.interinfo.bin2 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[2]
 }
 
-hist.attr.class.trio.interinfo.bin3 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[3]
+hist_attr.class.trio.interinfo.bin3 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[3]
 }
 
-hist.attr.class.trio.interinfo.bin4 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[4]
+hist_attr.class.trio.interinfo.bin4 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[4]
 }
 
-hist.attr.class.trio.interinfo.bin5 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[5]
+hist_attr.class.trio.interinfo.bin5 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[5]
 }
 
-hist.attr.class.trio.interinfo.bin6 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[6]
+hist_attr.class.trio.interinfo.bin6 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[6]
 }
 
-hist.attr.class.trio.interinfo.bin7 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[7]
+hist_attr.class.trio.interinfo.bin7 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[7]
 }
 
-hist.attr.class.trio.interinfo.bin8 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[8]
+hist_attr.class.trio.interinfo.bin8 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[8]
 }
 
-hist.attr.class.trio.interinfo.bin9 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[9]
+hist_attr.class.trio.interinfo.bin9 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[9]
 }
 
-hist.attr.class.trio.interinfo.bin10 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.class.trio.interinfo", data.char))[10]
+hist_attr.class.trio.interinfo.bin10 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.class.trio.interinfo", data.char))[10]
 }
 
 
@@ -654,27 +654,27 @@ avg.attr.mic <- function(dataset, data.char) {
   mean(ac[! is.na(ac)])
 }
 
-min.attr.mic <- function(dataset, data.char) {
+min_attr.mic <- function(dataset, data.char) {
   ac <- GetMeasure("attr.mic", data.char)
   min(ac[! is.na(ac)])
 }
 
-max.attr.mic <- function(dataset, data.char) {
+max_attr.mic <- function(dataset, data.char) {
   ac <- GetMeasure("attr.mic", data.char)
   max(ac[! is.na(ac)])
 }
 
-var.attr.mic <- function(dataset, data.char) {
+var_attr.mic <- function(dataset, data.char) {
   ac <- GetMeasure("attr.mic", data.char)
   var(ac[! is.na(ac)])
 }
 
-sd.attr.mic <- function(dataset, data.char) {
+sd_attr.mic <- function(dataset, data.char) {
   ac <- GetMeasure("attr.mic", data.char)
   sd(ac[! is.na(ac)])
 }
 
-hist.attr.mic <- function(dataset, data.char) {
+hist_attr.mic <- function(dataset, data.char) {
   x <- GetMeasure("attr.mic", data.char)
   x <- range01(na.omit(as.numeric(x)))
 
@@ -685,44 +685,44 @@ hist.attr.mic <- function(dataset, data.char) {
   }
 }
 
-hist.attr.mic.bin1 <- function(dataset, data.char) {
-  as.vector(GetMeasure("hist.attr.mic", data.char))[1]
+hist_attr.mic.bin1 <- function(dataset, data.char) {
+  as.vector(GetMeasure("hist_attr.mic", data.char))[1]
 }
 
-hist.attr.mic.bin2 <- function(dataset, data.char) {
-  as.vector(GetMeasure("hist.attr.mic", data.char))[2]
+hist_attr.mic.bin2 <- function(dataset, data.char) {
+  as.vector(GetMeasure("hist_attr.mic", data.char))[2]
 }
 
-hist.attr.mic.bin3 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.mic", data.char))[3]
+hist_attr.mic.bin3 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.mic", data.char))[3]
 }
 
-hist.attr.mic.bin4 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.mic", data.char))[4]
+hist_attr.mic.bin4 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.mic", data.char))[4]
 }
 
-hist.attr.mic.bin5 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.mic", data.char))[5]
+hist_attr.mic.bin5 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.mic", data.char))[5]
 }
 
-hist.attr.mic.bin6 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.mic", data.char))[6]
+hist_attr.mic.bin6 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.mic", data.char))[6]
 }
 
-hist.attr.mic.bin7 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.mic", data.char))[7]
+hist_attr.mic.bin7 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.mic", data.char))[7]
 }
 
-hist.attr.mic.bin8 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.mic", data.char))[8]
+hist_attr.mic.bin8 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.mic", data.char))[8]
 }
 
-hist.attr.mic.bin9 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.mic", data.char))[9]
+hist_attr.mic.bin9 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.mic", data.char))[9]
 }
 
-hist.attr.mic.bin10 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.attr.mic", data.char))[10]
+hist_attr.mic.bin10 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_attr.mic", data.char))[10]
 }
 
 
@@ -752,27 +752,27 @@ avg.res.symb.pair.mutual.information <- function(dataset, data.char) {
   mean(unlist(rspmi))
 }
 
-min.res.symb.pair.mutual.information <- function(dataset, data.char) {
+min_res.symb.pair.mutual.information <- function(dataset, data.char) {
   rspmi <- GetMeasure("res.symb.pair.mutual.information", data.char)
   min(unlist(rspmi))
 }
 
-max.res.symb.pair.mutual.information <- function(dataset, data.char) {
+max_res.symb.pair.mutual.information <- function(dataset, data.char) {
   rspmi <- GetMeasure("res.symb.pair.mutual.information", data.char)
   max(unlist(rspmi))
 }
 
-var.res.symb.pair.mutual.information <- function(dataset, data.char) {
+var_res.symb.pair.mutual.information <- function(dataset, data.char) {
   rspmi <- GetMeasure("res.symb.pair.mutual.information", data.char)
   var(unlist(rspmi))
 }
 
-sd.res.symb.pair.mutual.information <- function(dataset, data.char) {
+sd_res.symb.pair.mutual.information <- function(dataset, data.char) {
   rspmi <- GetMeasure("res.symb.pair.mutual.information", data.char)
   sd(unlist(rspmi))
 }
 
-hist.res.symb.pair.mutual.information <- function(dataset, data.char) {
+hist_res.symb.pair.mutual.information <- function(dataset, data.char) {
   x <- unlist(GetMeasure("res.symb.pair.mutual.information", data.char))
   x <- range01(na.omit(as.numeric(x)))
 
@@ -783,44 +783,44 @@ hist.res.symb.pair.mutual.information <- function(dataset, data.char) {
   }
 }
 
-hist.res.symb.pair.mutual.information.bin1 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[1]
+hist_res.symb.pair.mutual.information.bin1 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[1]
 }
 
-hist.res.symb.pair.mutual.information.bin2 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[2]
+hist_res.symb.pair.mutual.information.bin2 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[2]
 }
 
-hist.res.symb.pair.mutual.information.bin3 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[3]
+hist_res.symb.pair.mutual.information.bin3 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[3]
 }
 
-hist.res.symb.pair.mutual.information.bin4 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[4]
+hist_res.symb.pair.mutual.information.bin4 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[4]
 }
 
-hist.res.symb.pair.mutual.information.bin5 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[5]
+hist_res.symb.pair.mutual.information.bin5 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[5]
 }
 
-hist.res.symb.pair.mutual.information.bin6 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[6]
+hist_res.symb.pair.mutual.information.bin6 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[6]
 }
 
-hist.res.symb.pair.mutual.information.bin7 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[7]
+hist_res.symb.pair.mutual.information.bin7 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[7]
 }
 
-hist.res.symb.pair.mutual.information.bin8 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[8]
+hist_res.symb.pair.mutual.information.bin8 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[8]
 }
 
-hist.res.symb.pair.mutual.information.bin9 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[9]
+hist_res.symb.pair.mutual.information.bin9 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[9]
 }
 
-hist.res.symb.pair.mutual.information.bin10 <- function(dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.res.symb.pair.mutual.information", data.char))[10]
+hist_res.symb.pair.mutual.information.bin10 <- function(dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_res.symb.pair.mutual.information", data.char))[10]
 }
 
 avg.mutual.information <- function(dataset, data.char) {
@@ -828,28 +828,28 @@ avg.mutual.information <- function(dataset, data.char) {
   mean(as.numeric(mutual.information))
 }
 
-max.mutual.information <- function(dataset, data.char) {
+max_mutual.information <- function(dataset, data.char) {
   mutual.information <- GetMeasure("mutual.information", data.char)
   max(as.numeric(mutual.information))
 }
 
-min.mutual.information <- function(dataset, data.char) {
+min_mutual.information <- function(dataset, data.char) {
   mutual.information <- GetMeasure("mutual.information", data.char)
   min(as.numeric(mutual.information))
 }
 
-var.mutual.information <- function(dataset, data.char) {
+var_mutual.information <- function(dataset, data.char) {
   mutual.information <- GetMeasure("mutual.information", data.char)
   var(as.numeric(mutual.information))
 }
 
-sd.mutual.information <- function(dataset, data.char) {
+sd_mutual.information <- function(dataset, data.char) {
   mutual.information <- GetMeasure("mutual.information", data.char)
   sd(as.numeric(mutual.information))
 }
 
 
-hist.mutual.information <- function (dataset, data.char) {
+hist_mutual.information <- function (dataset, data.char) {
   x <- na.omit(as.numeric(GetMeasure("mutual.information", data.char)))
   x <- range01(x)
 
@@ -860,44 +860,44 @@ hist.mutual.information <- function (dataset, data.char) {
   }
 }
 
-hist.mutual.information.bin1 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[1]
+hist_mutual.information.bin1 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[1]
 }
 
-hist.mutual.information.bin2 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[2]
+hist_mutual.information.bin2 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[2]
 }
 
-hist.mutual.information.bin3 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[3]
+hist_mutual.information.bin3 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[3]
 }
 
-hist.mutual.information.bin4 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[4]
+hist_mutual.information.bin4 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[4]
 }
 
-hist.mutual.information.bin5 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[5]
+hist_mutual.information.bin5 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[5]
 }
 
-hist.mutual.information.bin6 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[6]
+hist_mutual.information.bin6 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[6]
 }
 
-hist.mutual.information.bin7 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[7]
+hist_mutual.information.bin7 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[7]
 }
 
-hist.mutual.information.bin8 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[8]
+hist_mutual.information.bin8 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[8]
 }
 
-hist.mutual.information.bin9 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[9]
+hist_mutual.information.bin9 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[9]
 }
 
-hist.mutual.information.bin10 <- function (dataset, data.char) {
-  bin <- as.vector(GetMeasure("hist.mutual.information", data.char))[10]
+hist_mutual.information.bin10 <- function (dataset, data.char) {
+  bin <- as.vector(GetMeasure("hist_mutual.information", data.char))[10]
 }
 
 r_value <- function (dataset, data.char) {
@@ -924,25 +924,25 @@ avg.r_value <- function(dataset, data.char) {
   mean(r.values)
 }
 
-max.r_value <- function(dataset, data.char) {
+max_r_value <- function(dataset, data.char) {
   r.values <- GetMeasure("r_value", data.char)
 
   max(r.values)
 }
 
-min.r_value <- function(dataset, data.char) {
+min_r_value <- function(dataset, data.char) {
   r.values <- GetMeasure("r_value", data.char)
 
   min(r.values)
 }
 
-var.r_value <- function(dataset, data.char) {
+var_r_value <- function(dataset, data.char) {
   r.values <- GetMeasure("r_value", data.char)
 
   var(r.values)
 }
 
-sd.r_value <- function(dataset, data.char) {
+sd_r_value <- function(dataset, data.char) {
   r.values <- GetMeasure("r_value", data.char)
 
   sd(r.values)
@@ -1106,19 +1106,19 @@ avg.abs.skewness <- function(dataset, data.char) {
   mean(abs(GetMeasure("skewness.values", data.char)))
 }
 
-max.abs.skewness <- function(dataset, data.char) {
+max_abs.skewness <- function(dataset, data.char) {
   max(abs(GetMeasure("skewness.values", data.char)))
 }
 
-min.abs.skewness <- function(dataset, data.char) {
+min_abs.skewness <- function(dataset, data.char) {
   min(abs(GetMeasure("skewness.values", data.char)))
 }
 
-sd.abs.skewness <- function(dataset, data.char) {
+sd_abs.skewness <- function(dataset, data.char) {
   sd(abs(GetMeasure("skewness.values", data.char)))
 }
 
-var.abs.skewness <- function(dataset, data.char) {
+var_abs.skewness <- function(dataset, data.char) {
   var(abs(GetMeasure("skewness.values", data.char)))
 }
 

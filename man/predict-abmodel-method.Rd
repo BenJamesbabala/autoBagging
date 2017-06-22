@@ -3,7 +3,7 @@
 \docType{methods}
 \name{predict,abmodel-method}
 \alias{predict,abmodel-method}
-\title{Predicting on new data with a \strong{autobagging} model}
+\title{Predicting on new data with a \strong{autoBagging} model}
 \usage{
 \S4method{predict}{abmodel}(object, newdata)
 }

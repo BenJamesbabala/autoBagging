@@ -60,7 +60,7 @@ dstump.landmarker_d2 <- function (dataset, data.char) {
     m.conf <- table(dataf[dataf$fold==e, c("class")], prevs)
     ds.acc[e] <- sum(diag(m.conf))/sum(m.conf)
   }
-  return(mean(ds.acc))
+  mean(ds.acc)
 }
 
 
@@ -81,7 +81,7 @@ dstump.landmarker_d3 <- function (dataset, data.char) {
     m.conf <- table(dataf[dataf$fold==e, c("class")], prevs)
     ds.acc[e] <- sum(diag(m.conf))/sum(m.conf)
   }
-  return(mean(ds.acc))
+  mean(ds.acc)
 }
 
 #' classmajority.landmarker
@@ -100,7 +100,7 @@ classmajority.landmarker <- function (dataset, data.char) {
 
     ds.acc[e] <- sum(prevs == dataf[dataf$fold == e,c("class")]) / sum(nrow(dataf[dataf$fold == e,]))
   }
-  return(mean(ds.acc))
+  mean(ds.acc)
 }
 
 #' nb.landmarker.correlation

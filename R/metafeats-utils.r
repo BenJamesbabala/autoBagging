@@ -106,8 +106,9 @@ CharacterizeDF <- function(df, dc.measures) {
 }
 
 meta.dataframe <- function (dat, metaf) {
+  load("R/sysdata.rda")
 
-  CDF <- CharacterizeDF(dat, kCompleteClassificationGSI)
+  CDF <- CharacterizeDF(dat, sysdata$kCompleteClassificationGSI)
 
   metaframe <- NULL
 

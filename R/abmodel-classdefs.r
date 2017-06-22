@@ -13,7 +13,7 @@
 #' @slot dynamic_selection Dynamic selection method to apply in new data. Character.
 #' This value is predicted by the metalearning model.
 #'
-#' @seealso \code{\link{autobagging}} function for the method os predicting the
+#' @seealso \code{\link{autoBagging}} function for the method os predicting the
 #' best workflow.
 #'
 #' @export
