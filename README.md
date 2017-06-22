@@ -16,10 +16,10 @@ Install the package using **devtools**:
 
 The core function is **autoBagging**. Its input is simply the formula for the predictive classification task and the dataset:
 
-- `auto_model <- autoBagging(Species ~., iris)`
+- `auto_model <- autoBagging(formula, train.data)`
 
 For predicting new instances, the model uses the standard **predict** method:
 
-- `preds <- predict(auto_model, iris)`
+- `preds <- predict(auto_model, test.data)`
 
 #### Contact us at: \{fhpinto, vmac\}@inesctec.pt
