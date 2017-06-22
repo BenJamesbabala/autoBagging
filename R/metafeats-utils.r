@@ -1,3 +1,5 @@
+data(sysdata, envir=environment())
+
 #' Retrieve the value of a previously computed measure
 #'
 #' @param inDCName name of data characteristics
@@ -106,7 +108,7 @@ CharacterizeDF <- function(df, dc.measures) {
 }
 
 meta.dataframe <- function (dat, metaf) {
-  load("R/sysdata.rda")
+  #load("R/sysdata.rda")
 
   CDF <- CharacterizeDF(dat, sysdata$kCompleteClassificationGSI)
 

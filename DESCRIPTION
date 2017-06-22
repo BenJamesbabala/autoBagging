@@ -30,6 +30,6 @@ Imports:
     party
 License: GPL (>=2)
 Encoding: UTF-8
-LazyData: true
+LazyData: no
 RoxygenNote: 6.0.1
 Suggests: testthat
