@@ -32,7 +32,7 @@ autoBagging <- function(form, data) {
   cat("Sit tight, relax and enjoy your coffee. autoBagging is working for you!\n\n")
   cat("https://www.youtube.com/watch?v=hMr3KtYUCcI\n\n")
 
-  load("R/sysdata.rda")
+  #load("R/sysdata.rda")
   metafeatures_names <- sysdata$metafeatures_names
   MaxMinMetafeatures <- sysdata$MaxMinMetafeatures
   Xtest <- sysdata$Xtest
