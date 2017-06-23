@@ -22,4 +22,3 @@ importFrom("stats", "aov", "complete.cases", "cor", "dist",
            "model.frame", "model.matrix", "na.omit", "sd", "var")
 importFrom("utils", "combn")
 importFrom("graphics", "hist")
-

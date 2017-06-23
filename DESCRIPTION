@@ -15,8 +15,8 @@ Description: Automatic asdas. asdaskqwed sa sadf. asdsa ooqw.
 Depends: R (>= 2.10)
 Imports:
     cluster,
-    methods,
     xgboost,
+    methods,
     e1071,
     rpart,
     abind,

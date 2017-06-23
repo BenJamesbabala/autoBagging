@@ -10,7 +10,13 @@ Currently, autoBagging is only available in Github. Soon it will be submitted to
 
 Install the package using **devtools**:
 
+- `devtools::install_github("hadley/devtools")`
+
+followed by:
+
 - `devtools::install_github("fhpinto/autoBagging")`
+
+In some OS, the installation might need manual installation of recursive dependencies (e.g. data.table).
 
 ### Guidelines
 
